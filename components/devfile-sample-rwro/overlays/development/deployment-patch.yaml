@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-rwro
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-777-0074-tenant/ci10t-777-0074-app/devfile-sample-rwro@sha256:3a51087eeb17ee5aa9131c7ed3c5c05cdd9823bdd5e5e6e5a45cc1c2a7cdf23b
+        name: my-nodejs
+        resources: {}
+status: {}
